@@ -22,7 +22,8 @@
     <link href="https://css.gg/toggle-square.css" rel="stylesheet" />
     <link href="https://css.gg/bell.css" rel="stylesheet" />
     <link href="https://css.gg/search.css" rel="stylesheet" />
-    <link href="https://css.gg/push-chevron-down.css" rel="stylesheet" />
+    <link href="https://css.gg/pen.css" rel="stylesheet" />
+    <link href="https://css.gg/trash.css" rel="stylesheet" />
   </head>
   <body>
     <div class="website-wrapper">
@@ -78,11 +79,25 @@
           <input placeholder="Search" />
           <div class="bell-wrapper">
             <i class="gg-bell"></i>
+            <div class="notifications"></div>
           </div>
         </div>
         <div class="content-wrapper">
           <div class="tasks">
-            <div class="task-content">content</div>
+            <div class="task-content">
+              <div class="content-text-wrapper">
+                <h6>8 task complted out of 10</h2>
+                <div class="graph-text-wrapper">
+                  <p class="show">Show:</p>
+                  <span class="month">This week</span>
+                  <div class="arrow-down"></div>
+                </div>
+              </div>
+            </div>
+            <div class="task-graph-wrapper">
+              <div class="green"></div>
+              <div class="grey"></div>
+            </div>
             <hr />
             <div class="calendar"></div>
             <div class="card">
@@ -94,6 +109,12 @@
                 <img src="./img/george_portrait.png" alt="" />
                 <h2>George Fields</h2>
               </div>
+              <div class="info-text-wrapper">
+                <h2>Event</h2>
+              </div>
+              <div class="button-completed-wrapper">
+                <h2>Completed</h2>
+              </div>
             </div>
             <div class="card">
               <div class="card-text-wrapper">
@@ -103,6 +124,16 @@
               <div class="card-profile-wrapper">
                 <img src="./img/rebecca_portrait.png" alt="" />
                 <h2>Rebeca Moore</h2>
+              </div>
+              <div class="info-text-wrapper">
+                <h2>Reminder</h2>
+              </div>
+              <div class="icon-delet-wrapper">
+                <i class="gg-pen"></i>
+                <i class="gg-trash"></i>
+              </div>
+              <div class="button-ended-wrapper">
+                <h2>Ended</h2>
               </div>
             </div>
             <div class="card">
@@ -114,6 +145,15 @@
                 <img src="./img/lindsey_portrait.png" alt="" />
                 <h2>Lindsey Stroud</h2>
               </div>
+              <div class="info-text-wrapper">
+                <h2>Call</h2>
+              </div>
+              <div class="button-completed-wrapper">
+                <h2>Completed</h2>
+              </div>
+            </div>
+            <div class="show-more-wrapper">
+              <h2>Show more</h2>
             </div>
           </div>
           <div class="charts">
@@ -123,7 +163,7 @@
                 <div class="graph-text-wrapper">
                   <p class="show">Show:</p>
                   <span class="month">Monthly</span>
-                  <span><i icon-graph class="gg-push-chevron-down"></i></span>
+                  <div class="arrow-down"></div>
                 </div>
               </div>
               <hr />
@@ -138,7 +178,7 @@
                 <div class="graph-text-wrapper">
                   <p class="show">Show:</p>
                   <span class="month">The month</span>
-                  <span><i icon-graph class="gg-push-chevron-down"></i></span>
+                  <div class="arrow-down"></div>
                 </div>
               </div>
               <hr />
