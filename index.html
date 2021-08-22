@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- // css \\-->
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <!-- // css \\-->
+    <!-- // fonts \\-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+<!-- // fonts \\-->
+    <!-- // icons \\-->
     <link href="https://css.gg/collage.css" rel="stylesheet" />
     <link href="https://css.gg/database.css" rel="stylesheet" />
     <link href="https://css.gg/mail.css" rel="stylesheet" />
@@ -24,11 +26,19 @@
     <link href="https://css.gg/search.css" rel="stylesheet" />
     <link href="https://css.gg/pen.css" rel="stylesheet" />
     <link href="https://css.gg/trash.css" rel="stylesheet" />
+    
+
+  <!-- // icons \\-->
   </head>
   <body>
+    <!-- // generals \\-->
     <div class="website-wrapper">
+     <!-- // generals \\-->
+     <!-- // sidebar \\-->
       <div class="sidebar">
-        <h1>SaaS Kit</h1>
+       <div class="saas-container">
+         <h1>SaaS Kit</h1>
+       </div>
         <div class="divider">
           <div class="grey-divider"></div>
         </div>
@@ -77,8 +87,10 @@
           <h4>Toggle sidebar</h4>
         </div>
       </div>
+    <!-- // main \\-->
       <div class="main">
-        <div class="searchbar-wrapper">
+        <div class="searchbar-container">
+           <div class="searchbar-wrapper">
           <i class="gg-search"></i>
           <input placeholder="Global Search" />
           <div class="bell-wrapper">
@@ -86,9 +98,13 @@
             <div class="notifications"></div>
           </div>
         </div>
-        <div class="divider">
-          <div class="hr-line"></div>
-        </div>
+        </div>       
+      <!-- // divider \\-->
+      <div class="divider">
+        <div class="grey-divider"></div>
+      </div>
+        <!-- // divider \\-->
+       <!-- // content wrapper \\-->
         <div class="content-wrapper">
           <div class="tasks">
             <div class="task-content">
@@ -128,64 +144,75 @@
                 <h1>29</h1>
               </div>
             </div>
-            <div class="hr">
-              <div class="line"></div>
+            <!-- // divider \\-->
+            <div class="divider">
+              <div class="grey-divider"></div>
             </div>
-            <div class="card">
-              <div class="card-text-wrapper">
-                <h1>Send benefit review by Sunday</h1>
-                <p><span>Due to date:</span> December 23, 2018</p>
+             <!-- // divider \\-->
+             <div class="cards-container">
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <h1>Send benefit review by Sunday</h1>
+                  <p><span>Due date:</span> December 23, 2018</p>
+                </div>
+                <div class="card-profile-wrapper">
+                  <img src="./img/george_portrait.png" alt="" />
+                  <div class="name-wrapper">
+                    <h3>George Fields</h3>
+                  </div> 
+                </div>
+                <div class="info-text-wrapper">
+                  <h2>Event</h2>
+                </div>
+                <div class="button-completed-wrapper">
+                  <h2>Completed</h2>
+                </div>
               </div>
-              <div class="card-profile-wrapper">
-                <img src="./img/george_portrait.png" alt="" />
-                <h2>George Fields</h2>
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <h1>Invite to office meet-up</h1>
+                  <p><span>Due to date:</span> December 23, 2018</p>
+                </div>
+                <div class="card-profile-wrapper">
+                  <img src="./img/rebecca_portrait.png" alt="" />
+                  <div class="name-wrapper">
+                    <h3>Rebeca Moore</h3>
+                  </div>
+                  
+                </div>
+                <div class="info-text-wrapper">
+                  <h2>Reminder</h2>
+                </div>
+                <div class="icon-delet-wrapper">
+                  <i class="gg-pen"></i>
+                  <i class="gg-trash"></i>
+                </div>
+                <div class="button-ended-wrapper">
+                  <h2>Ended</h2>
+                </div>
               </div>
-              <div class="info-text-wrapper">
-                <h2>Event</h2>
+              <div class="card">
+                <div class="card-text-wrapper">
+                  <h1>Office meet-up</h1>
+                  <p><span>Due to date:</span> December 23, 2018</p>
+                </div>
+                <div class="card-profile-wrapper">
+                  <img src="./img/lindsey_portrait.png" alt="" />
+                  <div class="name-wrapper">
+                    <h3>Lindsey Stroud</h3>
+                  </div>
+                </div>
+                <div class="info-text-wrapper">
+                  <h2>Call</h2>
+                </div>
+                <div class="button-completed-wrapper">
+                  <h2>Completed</h2>
+                </div>
               </div>
-              <div class="button-completed-wrapper">
-                <h2>Completed</h2>
+              <div class="show-more-wrapper">
+                <h2>Show more</h2>
               </div>
-            </div>
-            <div class="card">
-              <div class="card-text-wrapper">
-                <h1>Invite to office meet-up</h1>
-                <p><span>Due to date:</span> December 23, 2018</p>
-              </div>
-              <div class="card-profile-wrapper">
-                <img src="./img/rebecca_portrait.png" alt="" />
-                <h2>Rebeca Moore</h2>
-              </div>
-              <div class="info-text-wrapper">
-                <h2>Reminder</h2>
-              </div>
-              <div class="icon-delet-wrapper">
-                <i class="gg-pen"></i>
-                <i class="gg-trash"></i>
-              </div>
-              <div class="button-ended-wrapper">
-                <h2>Ended</h2>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-text-wrapper">
-                <h1>Office meet-up</h1>
-                <p><span>Due to date:</span> December 23, 2018</p>
-              </div>
-              <div class="card-profile-wrapper">
-                <img src="./img/lindsey_portrait.png" alt="" />
-                <h2>Lindsey Stroud</h2>
-              </div>
-              <div class="info-text-wrapper">
-                <h2>Call</h2>
-              </div>
-              <div class="button-completed-wrapper">
-                <h2>Completed</h2>
-              </div>
-            </div>
-            <div class="show-more-wrapper">
-              <h2>Show more</h2>
-            </div>
+             </div>        
           </div>
           <div class="charts">
             <div class="bar-graphs">
@@ -247,6 +274,7 @@
         </div>
       </div>
     </div>
+    <!-- // main \\-->
     <script></script>
   </body>
 </html>
