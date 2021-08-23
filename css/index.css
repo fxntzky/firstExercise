@@ -538,12 +538,10 @@ h6 {
 .svg-body-wrapper {
   position: absolute;
   top: 10%;
-  transform: translate(-10%);
 }
 .svg-line-wrapper {
   position: absolute;
   top: 10%;
-  transform: translate(-10%);
 }
 .dot-blue-graphic {
   height: 5px;
@@ -553,9 +551,9 @@ h6 {
   border-radius: 50%;
   margin: 5px;
   position: absolute;
-  right: 25.5%;
+  right: 21.5%;
   top: 12%;
-  transform: translate(-25.5% -12%);
+  transform: translate(-21.5% -12%);
 }
 .stick-wrapper {
   height: 41%;
@@ -564,8 +562,8 @@ h6 {
   opacity: 25%;
   position: absolute;
   top: 0;
-  right: 28.2%;
-  transform: translate(-0 -28.2%);
+  right: 25.2%;
+  transform: translate(-0 -25.2%);
 }
 .dates-parameter-wrapper {
   display: flex;
@@ -575,7 +573,6 @@ h6 {
   align-items: center;
   position: absolute;
   bottom: 15px;
-  transform: translate(-15px);
 }
 .dates-parameter-wrapper h1 {
   font-size: 12px;
@@ -591,7 +588,6 @@ h6 {
   height: 45%;
   position: absolute;
   top: 3%;
-  transform: translate(-3%);
 }
 .column {
   width: 100%;
@@ -603,16 +599,21 @@ hr {
 .parameters-wrapper {
   display: flex;
   flex-direction: column;
-  height: 90%;
-  margin-left: 5%;
-  position: absolute;
-  top: 36%;
-  transform: translate(-36%);
+  margin-left: 25px;
+  margin-top: 20px;
 }
 .parameters-wrapper h1 {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 400;
   color: #192a3e;
+}
+.full-graph-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
 }
 
 /*// graph above \\*/
@@ -755,25 +756,27 @@ h1 {
     flex-direction: column;
     margin: 25px;
   }
-  .parameters-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-    padding-left: 35px;
-    margin-left: 5%;
-    position: absolute;
-    top: 37%;
-    transform: translate(-37%);
-  }
-  .graphic-container {
-    padding-left: 35px;
-  }
   .bar-graphs {
     height: 50%;
     margin-bottom: 25px;
   }
   .pie-charts {
     height: 50%;
+  }
+  .dot-blue-graphic {
+    position: absolute;
+    right: 25.5%;
+    top: 12%;
+    transform: translate(-25.5% -12%);
+  }
+  .stick-wrapper {
+    position: absolute;
+    top: 0;
+    right: 28.2%;
+    transform: translate(-0 -28.2%);
+  }
+  .parameters-wrapper h1 {
+    font-size: 14px;
   }
   .pie-chart-graphic {
     width: 290px;
