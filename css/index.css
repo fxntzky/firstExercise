@@ -538,6 +538,7 @@ h6 {
 .svg-body-wrapper {
   position: absolute;
   top: 10%;
+  transform: translate(-10%);
 }
 .svg-line-wrapper {
   position: absolute;
