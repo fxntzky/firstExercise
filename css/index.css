@@ -1,3 +1,14 @@
+/*// The Width of this exercise is set at 1680px in destkop mode,
+ wich is the best setting for my screen,
+ you can change it in line number 721 , (.website-wrapper). 
+ 
+ I think this exercise is amazing,
+ I can visualize the value of this exercise when we reach React.
+ In my particular case i think i succeed at hardcoding the look,
+ but i think i did it in a pretty ineficient way with some 
+ mistakes in html's structure.
+ \\*/
+
 /*// general and mobile \\*/
 * {
   font-family: "Poppins", sans-serif;
@@ -9,7 +20,7 @@ body {
 .website-wrapper {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%vw;
   height: 100vh;
 }
 
@@ -17,7 +28,7 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 /*// Main \\*/
@@ -117,7 +128,6 @@ body {
 .sidebar .menu i {
   opacity: 25%;
 }
-
 .sidebar .menu h4 {
   margin-left: 15px;
   font-style: normal;
@@ -127,7 +137,6 @@ body {
   letter-spacing: 0.01em;
   color: #334d6e;
 }
-
 .sidebar .menu-toggle {
   display: flex;
   flex-direction: row;
@@ -141,7 +150,6 @@ body {
 .sidebar .menu-toggle i {
   opacity: 25%;
 }
-
 .sidebar .menu-toggle h4 {
   margin-left: 15px;
   font-style: normal;
@@ -709,8 +717,8 @@ h1 {
 
 @media only screen and (min-width: 780px) {
   .website-wrapper {
-    height: 100vh;
     flex-direction: row;
+    width: 1680px;
   }
   .sidebar {
     display: inline-block;
