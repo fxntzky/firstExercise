@@ -215,7 +215,6 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 5px;
   margin-bottom: 25px;
 }
 
@@ -235,7 +234,7 @@ h6 {
   color: #334d6e;
 }
 .task-graph-wrapper {
-  width: 735px;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,76 +242,69 @@ h6 {
   margin: auto;
 }
 .green {
-  width: 1570px;
+  width: 95%;
   height: 4px;
   border-radius: 3px;
   background-color: #2ed47a;
 }
 .grey {
-  width: 587px;
+  width: 100%;
   height: 4px;
   border-radius: 3px;
   background-color: #ebeff2;
 }
 .calendar-wrapper {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 35px;
+}
+.day-wrapper {
+  display: flex;
   flex-direction: column;
-  justify-content: left;
-  margin-top: 15px;
-  margin-left: 25px;
-  margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
 }
-.calendar-wrapper h1 {
-  font-size: 15px;
-  line-height: 22.5px;
-  font-weight: 500;
-  font-style: normal;
-  color: #192a3e;
-}
-.calendar-days {
+.daydate {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 90%;
-  margin: auto;
+  height: 30px;
+  width: 30px;
 }
-.calendar-days h1 {
-  font-size: 13px;
-  color: #334d6e;
-  opacity: 50%;
-}
-.calendar-days .monday {
-  color: #109cf1;
-  opacity: 100%;
-}
-.calendar-numbers {
+.daydate-selected {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 90%;
-  margin: auto;
-}
-.calendar-numbers h1 {
-  font-size: 12px;
-  color: #4c5862;
-}
-.calendar-numbers .sunday-date {
-  color: white;
-  text-align: center;
-  align-items: center;
-  margin-top: 5px;
-}
-.calendar-numbers .monday-date {
-  color: #109cf1;
-  opacity: 100%;
-}
-.calendar-blue {
   height: 30px;
   width: 30px;
   background-color: #109cf1;
   border-radius: 50%;
+  color: white;
+}
+.weekday {
+  font-size: 13px;
+  color: #334d6e;
+  opacity: 50%;
+}
+.daydate {
+  font-size: 12px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  color: #4c5862;
+}
+.weekday-selected {
+  color: #109cf1;
+  opacity: 100%;
+}
+
+.monday-day {
+  color: #109cf1;
+  opacity: 100%;
+}
+.monday-date {
+  color: #109cf1;
 }
 .cards-container {
   margin-top: 55px;
@@ -500,21 +492,17 @@ h6 {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
   overflow: hidden;
+  height: 100%;
+  position: relative;
 }
-.bar-graphs img {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: auto;
-  margin-top: 25px;
-  width: 75%;
-}
+
 .text-wrapper-deals {
   display: flex;
   flex-direction: row;
   justify-content: left;
   align-items: center;
-  margin-left: 15px;
+  margin-top: 15px;
+  margin-left: 25px;
 }
 .dot-blue {
   height: 5px;
@@ -522,6 +510,65 @@ h6 {
   border: 4px solid #109cf1;
   border-radius: 50%;
   margin: 5px;
+}
+.graphic-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+.svg-wrapper {
+  position: absolute;
+  top: 10%;
+}
+.svg-line-wrapper {
+  position: absolute;
+  top: 10%;
+}
+.dot-blue-graphic {
+  height: 5px;
+  width: 5px;
+  border: 3px solid #109cf1;
+  background-color: white;
+  border-radius: 50%;
+  margin: 5px;
+  position: absolute;
+  right: 22.2%;
+  top: 15%;
+}
+.stick-wrapper {
+  height: 45%;
+  width: 1px;
+  background-color: #c4c4c4;
+  opacity: 25%;
+  position: absolute;
+  top: 0;
+  right: 25.2%;
+  margin-bottom: 5px;
+}
+.dates-parameter-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+}
+.dates-parameter-wrapper h1 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #4c5862;
+}
+.table {
+}
+.column {
+  display: flex;
+  flex-direction: row;
 }
 /*// graph above \\*/
 
@@ -569,6 +616,7 @@ h6 {
   flex-direction: row;
   margin: 0;
 }
+
 .pie-chart-graphic {
   background: radial-gradient(
       circle closest-side,
@@ -587,10 +635,11 @@ h6 {
       #f7685b 0,
       #f7685b 100%
     );
+  border: none;
+  outline: none;
   width: 240px;
   min-height: 165px;
   margin: 0;
-  background-color: red !important;
 }
 .dot-wrapper {
   display: flex;
